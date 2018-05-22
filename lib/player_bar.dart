@@ -20,20 +20,20 @@ class PlayerBar extends StatelessWidget implements PreferredSizeWidget {
   final Color backgroundColor;
 
   @override
-  Size get preferredSize => const Size.fromHeight(42.0);
+  Size get preferredSize => new Size.fromHeight(42.0);
 
   @override
   Widget build(BuildContext context) {
     final double bottomPadding = MediaQuery.of(context).padding.bottom;
     Widget result = new DecoratedBox(
       decoration: new BoxDecoration(
-        border: const Border(
-          top: const BorderSide(
+        border: new Border(
+          top: new BorderSide(
             color: Colors.white,
             width: 0.0, // One physical pixel.
             style: BorderStyle.solid,
           ),
-          bottom: const BorderSide(
+          bottom: new BorderSide(
             color: Colors.black,
             width: 1.0,
             style: BorderStyle.solid
