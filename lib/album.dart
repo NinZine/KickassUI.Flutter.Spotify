@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Album extends StatelessWidget {
-  Album({this.url, this.title, this.description, this.size=150.0, this.fontScale=1.0});
+  Album({required this.url, required this.title, required this.description, this.size=150.0, this.fontScale=1.0});
 
   final String url;
   final String title;

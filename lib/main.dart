@@ -1,7 +1,5 @@
 // Replace the code in main.dart with the following.
 
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 
 import 'home.dart';
@@ -17,17 +15,14 @@ class SpotifyApp extends StatefulWidget {
 }
 
 class SpotifyAppState extends State<SpotifyApp> {
-
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      theme: new ThemeData.dark(),
-      title: "Spotify",
-      home: new HomeScreen(),
-      routes: <String, WidgetBuilder>{
-        '/player': (BuildContext context) => new PlayerScreen()
-      }
-    );
+        theme: new ThemeData.dark(),
+        title: "Spotify",
+        home: new HomeScreen(),
+        routes: <String, WidgetBuilder>{
+          '/player': (BuildContext context) => new PlayerScreen()
+        });
   }
 }
-
