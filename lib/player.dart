@@ -52,7 +52,7 @@ class PlayerScreenState extends State<PlayerScreen> {
         child: Container(
 
             child: Album(
-              url: "http://vignette2.wikia.nocookie.net/metallica/images/e/ea/Death_Magnetic_%28album%29.jpg/revision/latest?cb=20160915153513",
+              url: "https://upload.wikimedia.org/wikipedia/en/5/53/Metallica_-_Death_Magnetic_cover.jpg",
               title: "Metallica",
               description: "Broken Beat & Scarred",
               size: 250.0,
@@ -116,7 +116,7 @@ class PlayerScreenState extends State<PlayerScreen> {
           children: <Widget>[
             Align(
               heightFactor: 1.5,
-              child: Image.network("http://vignette2.wikia.nocookie.net/metallica/images/e/ea/Death_Magnetic_%28album%29.jpg/revision/latest?cb=20160915153513", color: Colors.grey[600], colorBlendMode: BlendMode.darken),  // the image you want blurred
+              child: Image.network("https://upload.wikimedia.org/wikipedia/en/5/53/Metallica_-_Death_Magnetic_cover.jpg", color: Colors.grey[600], colorBlendMode: BlendMode.darken),  // the image you want blurred
             ),
             BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 50.0, sigmaY: 50.0),
